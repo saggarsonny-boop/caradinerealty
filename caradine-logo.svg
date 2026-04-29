@@ -1,9 +1,55 @@
-<svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Caradine Realty and Development logo mark</title>
-  <desc id="desc">A circular green and gold construction-themed monogram with a roof line and letter C.</desc>
-  <circle cx="42" cy="42" r="38" fill="#103327" stroke="#C89B3C" stroke-width="4"/>
-  <path d="M24 39L42 24L60 39" stroke="#E3BC64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M30 53V40.5" stroke="#E3BC64" stroke-width="3" stroke-linecap="round"/>
-  <path d="M54 53V40.5" stroke="#E3BC64" stroke-width="3" stroke-linecap="round"/>
-  <path d="M52 59C49.2 61.4 45.8 62.8 42 62.8C33.3 62.8 26.2 55.7 26.2 47C26.2 38.3 33.3 31.2 42 31.2C45.8 31.2 49.2 32.6 52 35" stroke="#C89B3C" stroke-width="4" stroke-linecap="round"/>
+<svg width="720" height="180" viewBox="0 0 720 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Caradine Realty and Development logo</title>
+  <desc id="desc">A transparent horizontal logo with a green scripted C, a gold-and-green sunburst roof motif, and a serif wordmark for Caradine Realty and Development L.L.C.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2D36B"/>
+      <stop offset="1" stop-color="#B58B18"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A8E11"/>
+      <stop offset="1" stop-color="#0B4E10"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="0" y="0" width="720" height="180" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0B2F17" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#soft-shadow)">
+    <ellipse cx="77" cy="60" rx="46" ry="18" transform="rotate(-18 77 60)" stroke="#8CC07D" stroke-width="3"/>
+    <path d="M163 125C141 146 111 156 80 154C47 152 20 134 17 103C14 76 35 49 69 42C85 39 101 41 116 49" stroke="#86BA7A" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M157 46C138 34 116 29 91 31C53 34 30 57 34 91C38 126 72 149 111 143C133 140 152 132 168 117" stroke="#13820D" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M124 40C98 47 82 65 78 94C75 118 78 139 88 152" stroke="url(#green)" stroke-width="18" stroke-linecap="round" fill="none"/>
+    <path d="M102 86C117 78 127 68 133 55C139 42 149 36 164 36" stroke="#13820D" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M96 82C119 93 137 108 152 128" stroke="#13820D" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <g transform="translate(286 26)">
+      <path d="M61 74L78 11L95 74H61Z" fill="url(#gold)" stroke="#8A6A11" stroke-width="1.5"/>
+      <g stroke="#1A6F18" stroke-width="4" stroke-linecap="round">
+        <path d="M78 11V-8"/>
+        <path d="M78 11L60 -9"/>
+        <path d="M78 11L36 -12"/>
+        <path d="M78 11L12 -10"/>
+        <path d="M78 11L-9 2"/>
+        <path d="M78 11L-18 21"/>
+        <path d="M78 11L-9 40"/>
+        <path d="M78 11L10 56"/>
+        <path d="M78 11L31 70"/>
+        <path d="M78 11L49 82"/>
+        <path d="M78 11L78 92"/>
+        <path d="M78 11L107 82"/>
+        <path d="M78 11L125 70"/>
+        <path d="M78 11L146 56"/>
+        <path d="M78 11L165 40"/>
+        <path d="M78 11L174 21"/>
+        <path d="M78 11L165 2"/>
+        <path d="M78 11L144 -10"/>
+        <path d="M78 11L120 -12"/>
+        <path d="M78 11L96 -9"/>
+      </g>
+    </g>
+
+    <text x="225" y="118" fill="url(#gold)" font-family="Georgia, 'Times New Roman', serif" font-size="72" letter-spacing="4">CARADINE</text>
+    <text x="308" y="150" fill="#1B1B1B" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-style="italic" font-weight="600">Realty &amp; Development L.L.C.</text>
+  </g>
 </svg>

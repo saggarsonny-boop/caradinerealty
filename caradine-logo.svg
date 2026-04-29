@@ -18,39 +18,43 @@
     </linearGradient>
   </defs>
 
-  <!-- OUTER SWASH: large italic oval — extends clearly BEYOND and ABOVE
-   the C body. Starts near top C-opening, sweeps up-and-left in a wide
-   arc well outside the C bowl, curves around, returns right side. -->
-  <path d="M 168,30
-       C 148,4   106,-6   64,10
-       C 20,28    4,68   14,106
-       C 24,144   60,166 100,163
-       C 136,160 165,144 178,120
-       C 188,100  185,76  170,58"
-    stroke="#1B7A2C" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <!-- OUTER SWASH: broader oval loop with longer return stroke -->
+    <path d="M 170,32
+         C 148,8 108,-2 66,12
+         C 25,26 8,62 14,98
+         C 20,136 50,162 94,162
+         C 132,162 164,146 178,122
+         C 191,100 190,72 171,54"
+      stroke="#1B7A2C" stroke-width="2.6" fill="none" stroke-linecap="round"/>
 
-  <!-- MAIN C BODY: bold filled calligraphic C with thick-thin variation -->
-  <path d="M 158,28
-       C 128,10  90,4   62,18
-       C 24,36    8,68  10,96
-       C 12,124  32,148  64,158
-       C 84,164 110,162 130,150
-       C 146,140 156,124 151,110
-       L 141,122
-       C 132,134 113,142  95,140
-       C 68,136  52,118  52,94
-       C 52,70   70,48   94,40
-       C 114,32  137,36  151,52 Z"
-    fill="url(#grn)" stroke="#093D14" stroke-width="0.9"/>
+    <!-- MAIN C BODY: heavier downstroke and sharper terminal contrast -->
+    <path d="M 160,30
+         C 132,12 95,8 68,20
+         C 32,36 16,66 18,94
+         C 20,124 42,146 72,154
+         C 98,160 126,154 144,136
+         C 156,124 162,110 160,96
+         L 148,108
+         C 140,118 126,126 108,128
+         C 84,130 64,114 62,92
+         C 60,70 74,50 96,42
+         C 118,34 142,38 156,52
+         C 162,58 165,66 165,74
+         C 165,83 161,89 154,93
+         L 166,91
+         C 176,86 182,77 182,66
+         C 182,54 177,44 168,36 Z"
+      fill="url(#grn)" stroke="#093D14" stroke-width="0.9"/>
 
-  <!-- TOP TERMINAL FLOURISH: delicate curl from crown of the C -->
-  <path d="M 158,28 C 166,15 181,11 188,20"
-    stroke="#1C8030" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <!-- TOP TERMINAL FLOURISH: pen-like crown stroke -->
+    <path d="M 160,30 C 168,18 182,15 189,24"
+      stroke="#1C8030" stroke-width="2.6" fill="none" stroke-linecap="round"/>
 
-  <!-- INNER OVAL: calligraphic counter detail inside C bowl -->
-  <ellipse cx="86" cy="84" rx="24" ry="32"
-       transform="rotate(-9,86,84)"
-       stroke="#6DCF7C" stroke-width="1.6" fill="none" opacity="0.55"/>
+    <!-- INNER HAIRLINES: calligraphic counter strokes -->
+    <path d="M 124,66 C 111,62 100,67 89,78 C 80,88 77,101 80,113"
+      stroke="#78D987" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M 110,64 C 124,66 136,73 147,84"
+      stroke="#78D987" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.62"/>
 
   <!-- SUNBURST: rays from (358,26), above the D/I in ARADINE.
    ARADINE at x=192: A≈48 R≈46 A≈48 = 142 → D starts at 334,

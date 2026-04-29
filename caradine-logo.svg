@@ -8,9 +8,10 @@
       <stop offset="42%"  stop-color="#D4A017"/>
       <stop offset="100%" stop-color="#8C6208"/>
     </linearGradient>
-    <!-- Green gradient for the C body -->
-    <linearGradient id="grn" x1="0.1" y1="0" x2="0.9" y2="1">
-      <stop offset="0%"   stop-color="#2EC85E"/>
+    <!-- C body gradient: gold at top blending into deep green — ties it to the gold wordmark -->
+    <linearGradient id="grn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#E8C840"/>
+      <stop offset="38%"  stop-color="#4EAA30"/>
       <stop offset="100%" stop-color="#0B4A18"/>
     </linearGradient>
     <!-- Warm gold gradient for the teardrop -->
@@ -90,13 +91,14 @@
   <!-- ═══════════════════════════════════════════
        WORDMARK  — CARADINE
        ═══════════════════════════════════════════ -->
-  <text x="173" y="108"
+  <!-- ARADINE — starts where A was in CARADINE (C ≈ 43px wide at this size) -->
+  <text x="216" y="108"
         font-family="'Palatino Linotype','Book Antiqua',Palatino,Georgia,'Times New Roman',serif"
         font-size="66" font-weight="bold" letter-spacing="2"
-        fill="url(#gld)">CARADINE</text>
+        fill="url(#gld)">ARADINE</text>
 
-  <!-- Subtitle — centered under CARADINE (mid-x ≈ 343) -->
-  <text x="343" y="138" text-anchor="middle"
+  <!-- Subtitle — centered under full visual span (stylized C left-edge ~0, ARADINE right-edge ~480, mid ~240) -->
+  <text x="310" y="138" text-anchor="middle"
         font-family="'Palatino Linotype','Book Antiqua',Palatino,Georgia,'Times New Roman',serif"
         font-size="21" font-style="italic"
         fill="#1C1C1C">Realty &amp; Development L.L.C.</text>

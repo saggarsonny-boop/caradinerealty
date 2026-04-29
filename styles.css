@@ -4,15 +4,15 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --color-black:   #0d0d0d;
-  --color-dark:    #1a1a1a;
-  --color-charcoal:#2e2e2e;
-  --color-mid:     #5a5a5a;
-  --color-muted:   #8a8a8a;
-  --color-light:   #f4f2ef;
+  --color-black:   #0c1a15;
+  --color-dark:    #123026;
+  --color-charcoal:#1f4a3a;
+  --color-mid:     #3f554d;
+  --color-muted:   #6f837b;
+  --color-light:   #f4f6f2;
   --color-white:   #ffffff;
-  --color-accent:  #b8860b;
-  --color-accent-light: #d4a017;
+  --color-accent:  #c89b3c;
+  --color-accent-light: #e3bc64;
   --font-serif:    'Playfair Display', Georgia, serif;
   --font-sans:     'Inter', system-ui, sans-serif;
   --max-w:         1200px;
@@ -119,10 +119,10 @@ h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 700; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(13,13,13,0.92);
+  background: rgba(12,26,21,0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(227,188,100,0.2);
   transition: background var(--transition);
 }
 
@@ -138,6 +138,18 @@ h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 700; }
   display: flex;
   flex-direction: column;
   line-height: 1.1;
+  position: relative;
+  padding-left: 3.15rem;
+  min-height: 42px;
+  justify-content: center;
+}
+.logo .logo-mark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
 }
 .logo-main {
   font-family: var(--font-serif);
@@ -208,9 +220,9 @@ h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 700; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 20% 50%, rgba(184,134,11,0.12) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 80% at 80% 20%, rgba(184,134,11,0.06) 0%, transparent 50%),
-    linear-gradient(160deg, #1a1a1a 0%, #0d0d0d 50%, #111 100%);
+    radial-gradient(ellipse 80% 60% at 20% 50%, rgba(200,155,60,0.14) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 80% 20%, rgba(227,188,100,0.1) 0%, transparent 50%),
+    linear-gradient(160deg, #16392d 0%, #0c1a15 50%, #11251e 100%);
 }
 
 /* Subtle architectural grid texture */
@@ -494,11 +506,11 @@ h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 700; }
   background-position: center;
 }
 .project-img-1 { background: linear-gradient(135deg, #3d2b1f 0%, #6b4226 50%, #3d2b1f 100%); }
-.project-img-2 { background: linear-gradient(135deg, #1c2b1c 0%, #2d4a2d 50%, #1c2b1c 100%); }
-.project-img-3 { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
-.project-img-4 { background: linear-gradient(135deg, #2b1f3d 0%, #422662 50%, #2b1f3d 100%); }
-.project-img-5 { background: linear-gradient(135deg, #1f2b2b 0%, #264a4a 50%, #1f2b2b 100%); }
-.project-img-6 { background: linear-gradient(135deg, #2b2b1f 0%, #4a4a26 50%, #2b2b1f 100%); }
+.project-img-2 { background: linear-gradient(135deg, #193628 0%, #2a5b43 50%, #193628 100%); }
+.project-img-3 { background: linear-gradient(135deg, #1b2f25 0%, #335e47 50%, #173124 100%); }
+.project-img-4 { background: linear-gradient(135deg, #3b2f18 0%, #6b5628 50%, #3b2f18 100%); }
+.project-img-5 { background: linear-gradient(135deg, #123026 0%, #2d6a4f 50%, #123026 100%); }
+.project-img-6 { background: linear-gradient(135deg, #2f2917 0%, #5a4d25 50%, #2f2917 100%); }
 
 /* Add subtle pattern overlay to project images */
 .project-img::after {
@@ -609,7 +621,7 @@ h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 700; }
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(184,134,11,0.12);
+  box-shadow: 0 0 0 3px rgba(200,155,60,0.18);
 }
 .form-group textarea { resize: vertical; min-height: 120px; }
 
@@ -655,6 +667,11 @@ h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 700; }
 
 .footer-brand .logo-main { color: var(--color-white); }
 .footer-brand .logo-sub { color: var(--color-accent); }
+.footer-brand .logo-mark {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 0.7rem;
+}
 .footer-brand p {
   margin-top: 1rem;
   font-size: 0.875rem;
@@ -713,7 +730,7 @@ h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 700; }
     position: fixed;
     top: 72px;
     left: 0; right: 0;
-    background: rgba(13,13,13,0.97);
+    background: rgba(12,26,21,0.97);
     flex-direction: column;
     align-items: center;
     padding: 2rem;
@@ -744,6 +761,17 @@ h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 700; }
   .cta-band-inner { flex-direction: column; text-align: center; }
 
   .footer-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    padding-left: 2.65rem;
+    min-height: 36px;
+  }
+  .logo .logo-mark {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 @media (max-width: 480px) {

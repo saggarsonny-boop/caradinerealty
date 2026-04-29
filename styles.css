@@ -141,7 +141,7 @@ h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 700; }
   min-height: 42px;
 }
 .logo .logo-mark {
-  width: clamp(190px, 22vw, 250px);
+  width: clamp(200px, 26vw, 290px);
   height: auto;
 }
 .logo .logo-main,

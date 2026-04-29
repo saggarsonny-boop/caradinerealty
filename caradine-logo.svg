@@ -1,104 +1,91 @@
-<svg width="580" height="155" viewBox="0 0 580 155" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logo-title logo-desc">
+<svg width="610" height="170" viewBox="0 -8 610 178" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logo-title logo-desc">
   <title id="logo-title">Caradine Realty and Development L.L.C.</title>
-  <desc id="logo-desc">Caradine Realty and Development logo: ornate green calligraphic C with outer swash, gold-and-green sunburst motif above the wordmark, and a gold serif wordmark.</desc>
+  <desc id="logo-desc">Caradine Realty and Development logo: ornate green calligraphic C with large outer swash loop, gold-and-green sunburst above the wordmark, and a gold serif wordmark.</desc>
   <defs>
-    <!-- Gold gradient for wordmark and teardrop -->
     <linearGradient id="gld" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"   stop-color="#F7DC6A"/>
       <stop offset="42%"  stop-color="#D4A017"/>
       <stop offset="100%" stop-color="#8C6208"/>
     </linearGradient>
-    <!-- C body gradient: gold at top blending into deep green — ties it to the gold wordmark -->
-    <linearGradient id="grn" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#E8C840"/>
-      <stop offset="38%"  stop-color="#4EAA30"/>
-      <stop offset="100%" stop-color="#0B4A18"/>
+    <linearGradient id="grn" x1="0.2" y1="0" x2="0.8" y2="1">
+  <stop offset="0%"   stop-color="#D4A820"/>
+  <stop offset="30%"  stop-color="#3AAB28"/>
+  <stop offset="100%" stop-color="#0B4A18"/>
     </linearGradient>
-    <!-- Warm gold gradient for the teardrop -->
     <linearGradient id="drp" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"   stop-color="#FAE84C"/>
       <stop offset="100%" stop-color="#C49A10"/>
     </linearGradient>
   </defs>
 
-  <!-- ═══════════════════════════════════════════
-       ORNATE CALLIGRAPHIC  C
-       Outer decorative swash loop — thin open arc
-       ═══════════════════════════════════════════ -->
-  <path d="M 150,6
-           C 128,-5 90,-5 60,10
-           C 18,30 2,66 5,100
-           C 8,132 30,150 62,150
-           C 90,150 120,138 142,122
-           C 158,110 165,96 161,83"
-        stroke="#22994A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <!-- OUTER SWASH: large italic oval — extends clearly BEYOND and ABOVE
+   the C body. Starts near top C-opening, sweeps up-and-left in a wide
+   arc well outside the C bowl, curves around, returns right side. -->
+  <path d="M 168,30
+       C 148,4   106,-6   64,10
+       C 20,28    4,68   14,106
+       C 24,144   60,166 100,163
+       C 136,160 165,144 178,120
+       C 188,100  185,76  170,58"
+    stroke="#1B7A2C" stroke-width="2.6" fill="none" stroke-linecap="round"/>
 
-  <!-- Main thick C body — filled Bezier shape
-       Outer arc: (136,18) → left side → (132,103)
-       Inner arc returns: (124,112) → right side → (132,38)        -->
-  <path d="M 136,18
-           C 110,3  78,-3  50,10
-           C 18,25   2,56   4,84
-           C  6,112  24,136  52,143
-           C  72,149  96,147 116,134
-           C 128,126 136,114 133,101
-           L 124,111
-           C 116,122  99,130  81,128
-           C  58,124  41,107  41,83
-           C  41,60   58,39   80,31
-           C  99,23  121,27  133,38 Z"
-        fill="url(#grn)" stroke="#093D14" stroke-width="0.8"/>
+  <!-- MAIN C BODY: bold filled calligraphic C with thick-thin variation -->
+  <path d="M 158,28
+       C 128,10  90,4   62,18
+       C 24,36    8,68  10,96
+       C 12,124  32,148  64,158
+       C 84,164 110,162 130,150
+       C 146,140 156,124 151,110
+       L 141,122
+       C 132,134 113,142  95,140
+       C 68,136  52,118  52,94
+       C 52,70   70,48   94,40
+       C 114,32  137,36  151,52 Z"
+    fill="url(#grn)" stroke="#093D14" stroke-width="0.9"/>
 
-  <!-- Top terminal flourish — small curling stroke from top of C -->
-  <path d="M 136,18 C 143,8 156,3 165,10"
-        stroke="#1A8035" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <!-- TOP TERMINAL FLOURISH: delicate curl from crown of the C -->
+  <path d="M 158,28 C 166,15 181,11 188,20"
+    stroke="#1C8030" stroke-width="2.6" fill="none" stroke-linecap="round"/>
 
-  <!-- Inner oval detail inside the C bowl — gives the calligraphic depth -->
-  <ellipse cx="72" cy="72" rx="27" ry="37"
-           transform="rotate(-8,72,72)"
-           stroke="#65D47C" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <!-- INNER OVAL: calligraphic counter detail inside C bowl -->
+  <ellipse cx="86" cy="84" rx="24" ry="32"
+       transform="rotate(-9,86,84)"
+       stroke="#6DCF7C" stroke-width="1.6" fill="none" opacity="0.55"/>
 
-  <!-- ═══════════════════════════════════════════
-       SUNBURST  (rays diverge from center at 372,27)
-       Positioned above the D and I in CARADINE
-       ═══════════════════════════════════════════ -->
+  <!-- SUNBURST: rays from (358,26), above the D/I in ARADINE.
+   ARADINE at x=192: A≈48 R≈46 A≈48 = 142 → D starts at 334,
+   D≈48 → I at 382. Midpoint = 358. -->
   <g stroke="#1A8035" stroke-linecap="round">
-    <!-- center top -->
-    <line x1="331" y1="27" x2="331" y2="1"   stroke-width="2.8"/>
-    <!-- left fan -->
-    <line x1="331" y1="27" x2="312" y2="3"   stroke-width="2.2"/>
-    <line x1="331" y1="27" x2="295" y2="8"   stroke-width="2.0"/>
-    <line x1="331" y1="27" x2="282" y2="17"  stroke-width="1.8"/>
-    <line x1="331" y1="27" x2="274" y2="29"  stroke-width="1.6"/>
-    <line x1="331" y1="27" x2="275" y2="43"  stroke-width="1.4"/>
-    <line x1="331" y1="27" x2="284" y2="56"  stroke-width="1.3"/>
-    <line x1="331" y1="27" x2="297" y2="64"  stroke-width="1.2"/>
-    <!-- right fan -->
-    <line x1="331" y1="27" x2="350" y2="3"   stroke-width="2.2"/>
-    <line x1="331" y1="27" x2="367" y2="8"   stroke-width="2.0"/>
-    <line x1="331" y1="27" x2="380" y2="17"  stroke-width="1.8"/>
-    <line x1="331" y1="27" x2="388" y2="29"  stroke-width="1.6"/>
-    <line x1="331" y1="27" x2="387" y2="43"  stroke-width="1.4"/>
-    <line x1="331" y1="27" x2="378" y2="56"  stroke-width="1.3"/>
-    <line x1="331" y1="27" x2="365" y2="64"  stroke-width="1.2"/>
+    <line x1="358" y1="26" x2="358" y2="0"  stroke-width="2.8"/>
+    <line x1="358" y1="26" x2="339" y2="2"  stroke-width="2.2"/>
+    <line x1="358" y1="26" x2="322" y2="8"  stroke-width="2.0"/>
+    <line x1="358" y1="26" x2="309" y2="17" stroke-width="1.8"/>
+    <line x1="358" y1="26" x2="301" y2="29" stroke-width="1.6"/>
+    <line x1="358" y1="26" x2="302" y2="43" stroke-width="1.4"/>
+    <line x1="358" y1="26" x2="311" y2="56" stroke-width="1.3"/>
+    <line x1="358" y1="26" x2="324" y2="64" stroke-width="1.2"/>
+    <line x1="358" y1="26" x2="377" y2="2"  stroke-width="2.2"/>
+    <line x1="358" y1="26" x2="394" y2="8"  stroke-width="2.0"/>
+    <line x1="358" y1="26" x2="407" y2="17" stroke-width="1.8"/>
+    <line x1="358" y1="26" x2="415" y2="29" stroke-width="1.6"/>
+    <line x1="358" y1="26" x2="414" y2="43" stroke-width="1.4"/>
+    <line x1="358" y1="26" x2="405" y2="56" stroke-width="1.3"/>
+    <line x1="358" y1="26" x2="392" y2="64" stroke-width="1.2"/>
   </g>
 
-  <!-- Gold teardrop / droplet at sunburst focal point -->
-  <path d="M 331,23 C 320,38 318,58 331,73 C 344,58 342,38 331,23 Z"
-        fill="url(#drp)" stroke="#9E6E0C" stroke-width="1.2"/>
+  <!-- TEARDROP: gold droplet at sunburst focal point -->
+  <path d="M 358,22 C 347,37 345,57 358,72 C 371,57 369,37 358,22 Z"
+    fill="url(#drp)" stroke="#9E6E0C" stroke-width="1.2"/>
 
-  <!-- ═══════════════════════════════════════════
-       WORDMARK  — CARADINE
-       ═══════════════════════════════════════════ -->
-  <!-- ARADINE — tight to the stylized C (C right edge ≈ 165, gap ≈ 10px) -->
-  <text x="175" y="108"
-        font-family="'Palatino Linotype','Book Antiqua',Palatino,Georgia,'Times New Roman',serif"
-        font-size="66" font-weight="bold" letter-spacing="2"
-        fill="url(#gld)">ARADINE</text>
+  <!-- WORDMARK: stylized C + ARADINE reads as CARADINE -->
+  <text x="192" y="108"
+    font-family="'Palatino Linotype','Book Antiqua',Palatino,Georgia,'Times New Roman',serif"
+    font-size="66" font-weight="bold" letter-spacing="2"
+    fill="url(#gld)">ARADINE</text>
 
-  <!-- Subtitle — centered under full visual span -->
-  <text x="265" y="138" text-anchor="middle"
-        font-family="'Palatino Linotype','Book Antiqua',Palatino,Georgia,'Times New Roman',serif"
-        font-size="21" font-style="italic"
-        fill="#1C1C1C">Realty &amp; Development L.L.C.</text>
+  <!-- SUBTITLE: centered under full composition (mid ≈ 258) -->
+  <text x="258" y="138" text-anchor="middle"
+    font-family="'Palatino Linotype','Book Antiqua',Palatino,Georgia,'Times New Roman',serif"
+    font-size="21" font-style="italic"
+    fill="#1C1C1C">Realty &amp; Development L.L.C.</text>
 </svg>

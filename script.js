@@ -141,3 +141,26 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 });
 
 revealElements.forEach(el => revealObserver.observe(el));
+
+// Client Login Modal Logic
+const loginTrigger = document.getElementById('login-trigger');
+const loginModal = document.getElementById('login-modal');
+const loginCloseBtn = document.getElementById('login-close');
+const loginCloseOverlay = document.getElementById('login-close-overlay');
+
+const openLoginModal = (e) => {
+  e.preventDefault();
+  loginModal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+};
+
+const closeLoginModal = () => {
+  loginModal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+};
+
+if (loginTrigger && loginModal) {
+  loginTrigger.addEventListener('click', openLoginModal);
+  loginCloseBtn.addEventListener('click', closeLoginModal);
+  loginCloseOverlay.addEventListener('click', closeLoginModal);
+}

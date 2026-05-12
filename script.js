@@ -72,3 +72,72 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     window.scrollTo({ top, behavior: 'smooth' });
   });
 });
+
+// Project Detail Modal & Slider
+const modal = document.getElementById('project-modal');
+const modalOverlay = modal.querySelector('.modal-overlay');
+const closeBtns = modal.querySelectorAll('[data-close-modal]');
+const baSlider = document.getElementById('ba-slider');
+const baBeforeImg = document.getElementById('ba-before-img');
+const baSliderLine = document.getElementById('ba-slider-line');
+
+// Open Modal
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', () => {
+    // Populate modal data based on card (mock functionality for now)
+    const title = card.querySelector('h3').textContent;
+    const tag = card.querySelector('.project-tag').textContent;
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-tag').textContent = tag;
+    
+    // Reset slider
+    baSlider.value = 50;
+    updateSlider(50);
+
+    // Show modal
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+  });
+});
+
+// Close Modal
+const closeModal = () => {
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+};
+
+closeBtns.forEach(btn => btn.addEventListener('click', closeModal));
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+    closeModal();
+  }
+});
+
+// Before/After Slider Logic
+const updateSlider = (value) => {
+  baBeforeImg.style.width = `${value}%`;
+  baSliderLine.style.left = `${value}%`;
+};
+
+baSlider.addEventListener('input', (e) => {
+  updateSlider(e.target.value);
+});
+
+// Scroll Reveal Animations
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      observer.unobserve(entry.target); // Run once
+    }
+  });
+}, {
+  root: null,
+  threshold: 0.15,
+  rootMargin: '0px 0px -50px 0px'
+});
+
+revealElements.forEach(el => revealObserver.observe(el));

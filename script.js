@@ -101,6 +101,42 @@ const projectData = {
       '17_Interior.jpg', '18_Interior.jpg', '19_Interior.jpg', '20_Exterior.jpg',
       '21_Exterior.jpg', 'Exterior.jpg'
     ].map(name => `/public/listings/5125_delcastle/${name}`)
+  },
+  warehouse: {
+    narrative: "<p>Full exterior and interior conversion of a historic 19th-century industrial brick warehouse. Reconstructed into creative loft-offices with modern HVAC, seismic retrofitting, and energy-efficient insulated glass frames, while preserving all original heavy-timber framing and exposed interior brick walls.</p>",
+    before: "/public/projects/warehouse_before.jpg",
+    after: "/public/projects/warehouse_after.jpg",
+    gallery: ["/public/projects/warehouse_before.jpg", "/public/projects/warehouse_after.jpg"]
+  },
+  infill: {
+    narrative: "<p>A high-density mixed-use development that replaced a vacant, blight-ridden urban lot. Features premium ground-floor storefront spaces for local retailers and cafes, with modern eco-friendly residences above. Includes geothermal heating, green roofs, and smart building controls.</p>",
+    before: "/public/projects/infill_before.jpg",
+    after: "/public/projects/infill_after.jpg",
+    gallery: ["/public/projects/infill_before.jpg", "/public/projects/infill_after.jpg"]
+  },
+  storefront: {
+    narrative: "<p>Historic restoration of a downtown brick commercial facade. Removed decades of metal cladding to expose and restore the original wood-carved moldings, brick arches, and cast-iron pillars. Replaced building systems and modernized the interior layouts for retail usage.</p>",
+    before: "/public/projects/storefront_before.jpg",
+    after: "/public/projects/storefront_after.jpg",
+    gallery: ["/public/projects/storefront_before.jpg", "/public/projects/storefront_after.jpg"]
+  },
+  school: {
+    narrative: "<p>Adaptive reuse conversion of an abandoned public school building. Repurposed the historic classrooms and gymnasium into 36 high-quality, fully accessible senior housing apartments, preserving the landmark exterior brick details, high ceilings, and original central corridors.</p>",
+    before: "/public/projects/school_before.jpg",
+    after: "/public/projects/school_after.jpg",
+    gallery: ["/public/projects/school_before.jpg", "/public/projects/school_after.jpg"]
+  },
+  multifamily: {
+    narrative: "<p>Ground-up construction of a modern 48-unit multi-family apartment community. Designed from the ground up for energy efficiency, utilizing solar arrays, high-efficiency insulation, and smart home packages. Features a central community courtyard and shared green space.</p>",
+    before: "",
+    after: "/public/projects/multifamily_front.jpg",
+    gallery: ["/public/projects/multifamily_front.jpg"]
+  },
+  health: {
+    narrative: "<p>A brand new, state-of-the-art community wellness center designed in partnership with local non-profits. The facility offers community health clinics, meeting spaces, a teaching kitchen, and outdoor walking paths to support local preventative care services.</p>",
+    before: "",
+    after: "/public/projects/health_front.jpg",
+    gallery: ["/public/projects/health_front.jpg"]
   }
 };
 

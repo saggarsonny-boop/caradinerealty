@@ -91,15 +91,12 @@ const baContainer = document.getElementById('modal-before-after');
 const projectData = {
   delcastle: {
     narrative: "<p>Our complete renovation of 5125 Delcastle Drive in Florissant, MO 63034. This project showcase details full residential revitalization, including customized interior layouts, updated kitchens and baths, systems modernization, and clean exterior landscaping.</p>",
-    before: "/public/listings/5125_delcastle/01_Exterior.jpg",
-    after: "/public/listings/5125_delcastle/Exterior.jpg",
+    before: "/public/listings/5125_delcastle/01_Before_Framing.jpg",
+    after: "/public/listings/5125_delcastle/02_After_Drywall.jpg",
     gallery: [
-      '01_Exterior.jpg', '02_Interior.jpg', '03_Interior.jpg', '04_Interior.jpg',
-      '05_Interior.jpg', '06_Interior.jpg', '07_Interior.jpg', '08_Interior.jpg',
-      '09_Interior.jpg', '10_Interior.jpg', '11_Interior.jpg', '12_Interior.jpg',
-      '13_Interior.jpg', '14_Interior.jpg', '15_Interior.jpg', '16_Interior.jpg',
-      '17_Interior.jpg', '18_Interior.jpg', '19_Interior.jpg', '20_Exterior.jpg',
-      '21_Exterior.jpg', 'Exterior.jpg'
+      '01_Before_Framing.jpg', '02_After_Drywall.jpg', '03_Exterior.jpg',
+      '04_Floor_Tools.jpg', '05_Drywall_Ceiling.jpg', '06_Interior_Framing.jpg',
+      '07_Studs_View.jpg'
     ].map(name => `/public/listings/5125_delcastle/${name}`)
   },
   warehouse: {
